@@ -1,0 +1,21 @@
+<%-include("partials/header");-%>
+<div class="jumbotron" style="background-color: none; text-align: center;">
+<h1>Send us a Message</h1>
+</div>
+<form action="/contact/Send" method="POST">
+    <div class="form-group">
+        <label for="publish">Your Name</label>
+        <input type="text" name="yourName" class="form-control" placeholder="Your Name" autocomplete="off" autofocus> 
+    </div>
+    <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control"  name="yourEmail" placeholder="Enter email" required>
+    </div>
+    <div>
+        <label for="multilineText" class="form-group">Your Message </label>
+        <textarea name="yourMessage" class="form-control" placeholder="Enter message here" value="" cols="40" rows="8"></textarea>
+    </div>
+    </br>
+    <button type="submit" name="button" class="btn btn-lg btn-primary">Send</button>
+</form>
+<%-include("partials/footer")-%>

@@ -1,0 +1,17 @@
+<%-include("partials/header");-%>
+<h1 class="jumbotron" style="text-align: center;">Add a New Post</h1>
+<form action="/compose" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="publish">Title of Post</label>
+        <input type="text" name="publish" class="form-control" autocomplete="off" autofocus> 
+    </div>
+    <div>
+        <label for="multilineText" class="form-group">Description </label>
+        <textarea name="multilineText" class="form-control" cols="40" rows="8"></textarea>
+    </div>
+    </br>
+    <button type="submit" name="button" class="btn btn-lg btn-primary">Publish</button>
+</form>
+
+
+<%-include("partials/footer");-%>

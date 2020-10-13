@@ -1,0 +1,8 @@
+<%-include("partials/header")-%>
+<h1>Home</h1>
+<%postArray.forEach(function(addPost){%>
+<h1> <%=addPost.title%></h1>
+<p> <%=addPost.discription.substring(0,100)+"...." %> <a href="/post/<%=addPost._id%>">Read More</a></p>
+<%}); %>
+
+<%-include("partials/footer")-%>
